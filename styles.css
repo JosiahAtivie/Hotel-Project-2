@@ -1,0 +1,474 @@
+:root {
+    /* TEXT VARIBLES */
+    --h1-size-: 3rem;
+    --h2-size: 2rem;
+    --h3-size: 0.8rem;
+    --font-family: "Big+Shoulders";
+
+    /* SPACING VARIABLES */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+
+    /* COLOR VARIABLES */
+    --light-grey1: #404347;
+    --light-grey2: #848c99;
+    --light-grey3: #cacfd9;
+    --text-white: #fafffb;
+    --box-shadow: 3px 1px 16px 11px rgba(150, 145, 145, 0.75);
+}
+
+/* GENERAL STYLES VARIABLES */
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--light-grey3);
+}
+
+.container {
+    max-width: 1128px;
+    display: grid;
+    margin: auto;
+    background-color: var(--light-grey3);
+    padding: var(--spacing-xl) var(--spacing-xl);
+}
+
+p {
+    font-size: var(--h2-size);
+    color: var(--light-grey1);
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    cursor: pointer;
+    color: var(--text-white);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--light-grey1);
+}
+
+a {
+    background-color: var(--light-grey3);
+    text-decoration: none;
+    padding: 15px;
+    color: var(--light-grey2);
+    border-radius: 10px;
+    position: relative;
+}
+
+a:hover {
+    color: var(--text-white);
+    background-color: var(--light-grey2);
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    margin: auto;
+    font-size: var(--h1-size-);
+    color: var(--light-grey1);
+}
+
+h2 {
+    margin: auto;
+    font-size: var(--h2-size);
+    color: var(--light-grey1);
+}
+
+/* EVENT CENTER PAGE VARIABLES */
+.event-left {
+    border-left: 2px solid var(event-middle-color);
+}
+
+.event-right {
+    border-right: 2px solid var(--event-middle-color);
+}
+
+/* BODY CONTENT */
+/* NAVBAR STYLES */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: var(--spacing-xl);
+}
+
+.logo {
+    background-color: var(--light-grey3);
+    text-decoration: none;
+    padding: 15px;
+    color: var(--light-grey1);
+    border-radius: 10px;
+}
+
+.nav-left {
+    width: 65%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: var(--spacing-md);
+}
+
+.nav-links li a {
+    font-size: var(--h1-size-);
+}
+
+/* WELCOME SECTION */
+.welcome {
+    padding-bottom: var(--spacing-lg);
+}
+
+.welcome-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('images/hotel.pic.01.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-white);
+    border-radius: 10px;
+}
+
+.welcome-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    /* Dark overlay */
+}
+
+.welcome-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    padding: 20px;
+
+}
+
+.welcome-content h1 {
+    font-size: var(--h1-size-);
+    margin-bottom: var(--spacing-md);
+    color: var(--text-white);
+}
+
+.welcome-content p {
+    font-size: var(--h2-size);
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-white);
+}
+
+.welcome-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: var(--h2-size);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.book-room {
+    background: var(--light-grey3);
+    color: var(--light-grey1);
+}
+
+.book-event {
+    background: var(--light-grey2);
+    color: var(--text-white);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: var(--light-grey1);
+    color: var(--text-white);
+}
+
+/* BOOK NOW SECTION */
+/* BOOK NOW SECTION */
+.book-now {
+    position: sticky;
+    top: 20px;
+    width: 40%;
+    background: var(--light-grey1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    color: var(--text-white);
+}
+
+.book-now h2 {
+    text-align: center;
+    font-size: var(--h2-size);
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.toggle-buttons button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: var(--h3-size);
+    background: var(--light-grey2);
+    color: var(--text-white);
+    transition: background 0.3s ease;
+    border-radius: 5px;
+}
+
+.toggle-buttons button.active {
+    background: var(--light-grey3);
+    color: var(--light-grey1);
+}
+
+.toggle-buttons .btn:hover {
+    background-color: var(--light-grey3);
+    color: var(--light-grey1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    width: 95%;
+}
+
+label {
+    margin-top: 10px;
+    font-size: var(--h3-size);
+}
+
+input,
+select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: var(--h3-size);
+    width: 100%;
+}
+
+.submit-btn {
+    margin-top: 15px;
+    padding: 12px;
+    background: var(--light-grey2);
+    color: var(--text-white);
+    font-size: var(--h3-size);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: var(--light-grey1);
+    color: var(--text-white);
+}
+
+/* LUXURY STYLES */
+
+.luxury {
+    margin: auto;
+    width: 40%;
+    position: relative;
+}
+
+/* car park styles */
+.car-park {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--light-grey3);
+}
+
+.car-park img {
+    object-fit: contain;
+}
+
+/* PICTURE DISPLAY SECTION */
+.picture-display {
+    background-color: var(--light-grey3);
+    padding: var(--spacing-lg) 0;
+}
+
+.pics img {
+    object-fit: contain;
+}
+
+.pics {
+    display: grid;
+    grid-template-areas:
+        "room1 room2 room3"
+        "reception1 event event"
+        "reception2 event event"
+        "car car bar";
+    width: 100%;
+    grid-gap: 10px;
+}
+
+#room1 {
+    grid-area: room1;
+}
+
+#room2 {
+    grid-area: room2;
+}
+
+#room3 {
+    grid-area: room3;
+}
+
+#reception1 {
+    grid-area: reception1;
+}
+
+#event-center-pic {
+    grid-area: event;
+}
+
+#reception2 {
+    grid-area: reception2;
+}
+
+#car-park {
+    grid-area: car;
+}
+
+#bar {
+    grid-area: bar;
+}
+
+/* PICTURE GRID STYLES */
+.picsid {
+    position: relative;
+}
+
+.picsid img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.picsid .overlay {
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.picsid .overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* FOOTER STYLES */
+
+/* Footer Styles */
+.all-footer {
+    background-color: var(--light-grey3);
+}
+
+footer {
+    width: 100%;
+    color: var(--text-white);
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+}
+
+.footer-section h3 {
+    font-size: var(--h2-size);
+    margin-bottom: 15px;
+}
+
+p .no-style a {
+    background-color: none;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: calc(var(--h3-size)*2);
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: var(--light-grey1);
+}
+
+.footer-section ul li a:hover {
+    color: var(--text-white);
+    text-decoration: underline;
+}
+
+.footer-section h3 {
+    color: var(--light-grey1);
+}
+
+
+/* EVENT-CENTER-PAGE */

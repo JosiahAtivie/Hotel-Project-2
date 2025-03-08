@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCHUKO HOTELS AND SUITS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar section-container">
+                <div class="section-content">
+                    <div class="logo">LOGO</div>
+                    <div class="nav-left">
+                        <ul class="nav-links">
+                            <li id="home"><a href="event-center-page.html">Event Center</a></li>
+                            <li><a href="rooms-page.html">Rooms</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- WELCOME SECTION -->
+    <div class="section-container welcome">
+        <div class="section-content">
+            <section class="welcome-section">
+                <div class="welcome-content">
+                    <h1>Welcome to OCHUKO HOTELS AND SUITES</h1>
+                    <p>Experience luxury, comfort, and excellent service in the heart of the city.</p>
+                    <div class="welcome-buttons">
+                        <a href="#book-room" class="btn book-room">Book a Room</a>
+                        <a href="#book-event" class="btn book-event">Book an Event</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- BOOK NOW SECTION -->
+    <div class="section-container">
+        <div class="section-content">
+            <section class="book-now">
+                <h2>Book Now</h2>
+                <div class="toggle-buttons">
+                    <button class="btn" id="book-room-btn" class="active" onclick="toggleBooking('room')">Book
+                        Room</button>
+                    <button class="btn" id="book-event-btn" onclick="toggleBooking('event')">Book Event Hall</button>
+                </div>
+
+                <form id="booking-form">
+                    <div id="room-options">
+                        <label for="room-type">Room Type:</label>
+                        <select id="room-type">
+                            <option value="single">Single Room</option>
+                            <option value="suit">Suit</option>
+                        </select>
+                    </div>
+
+                    <label for="full-name">Full Name:</label>
+                    <input class="input" type="text" id="full-name" placeholder="Enter your name" required>
+
+                    <label for="email">Email:</label>
+                    <input class="input" type="email" id="email" placeholder="Enter your email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input class="input" type="tel" id="phone" placeholder="Enter your phone number" required>
+
+                    <label for="date">Check-in Date:</label>
+                    <input class="input" type="date" id="date" required>
+
+                    <label for="duration">Duration (days):</label>
+                    <input class="input" type="number" id="duration" min="1" required>
+
+                    <button type="submit" class="submit-btn">Submit Booking</button>
+                </form>
+            </section>
+            <div class="luxury">
+                <h1>Luxury Redefined</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsam voluptates animi ex tempore voluptatem
+                    illum? Delectus numquam dolore quisquam enim
+                    nesciunt quos voluptatum ipsa consequatur quod sit,
+                    assumenda aspernatur officiis.</p>
+            </div>
+        </div>
+    </div>
+    <!-- PICTURE DISPLAY SECTION -->
+    <div class="section-container picture-display">
+        <div class="section-content">
+            <div class="pics">
+                <div class="picsid" id="room1">
+                    <img src="images/room1.jpg" alt="">
+                    <p class="overlay">ROOMS</p>
+                </div>
+                <div class="picsid" id="room2">
+                    <img src="images/room2.jpg" alt="">
+                    <p class="overlay">ROOMS</p>
+                </div>
+                <div class="picsid" id="room3">
+                    <img src="images/room3.jpg" alt="">
+                    <p class="overlay">ROOMS</p>
+                </div>
+                <div class="picsid" id="reception1">
+                    <img src="images/reception1.jpg" alt="">
+                    <p class="overlay">RECEPTION</p>
+                </div>
+                <div class="picsid" id="reception2">
+                    <img src="images/reception2.jpg" alt="">
+                    <p class="overlay">RECEPTION</p>
+                </div>
+                <div class="picsid" id="event-center-pic">
+                    <img src="images/kitchen2.jpg" alt="">
+                    <p class="overlay">EVENT HALL</p>
+                </div>
+                <div class="picsid" id="car-park">
+                    <img src="images/car-park1.jpg" alt="">
+                    <p class="overlay">CAR PARK</p>
+                </div>
+                <div class="picsid" id="bar">
+                    <img src="images/bar1.jpg" alt="">
+                    <p class="overlay">BAR</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER SECTION -->
+    <div class="section-container all-footer">
+        <div class="section-content">
+            <footer>
+                <div class="footer-container">
+                    <!-- Location Section -->
+                    <div class="footer-section">
+                        <h3>Location</h3>
+                        <p>OCHUKO HOTELS AND SUITS</p>
+                        <p>123 LWoji Street, Benin City, Nigeria</p>
+                        <p>Email: info@ochukohotels.com</p>
+                    </div>
+
+                    <!-- Contact Us Section -->
+                    <div class="footer-section">
+                        <h3 id="contact-us">Contact Us</h3>
+                        <p>Phone: +234 812 345 6789</p>
+                        <p>Phone: +234 901 234 5678</p>
+                        <p>Facebook</p>
+                        <p>Instagram</p>
+                        <p>Twitter</p>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="rooms-page.html">Rooms</a></li>
+                            <li><a href="event-center-page.html">Event Hall</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
